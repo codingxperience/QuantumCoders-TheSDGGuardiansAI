@@ -32,7 +32,7 @@ allowed_executables = [ "npx", "uvx" ]
 [UI]
 name = "ClimateGPT Assistant"
 description = "Your friendly assistant for all things climate change in Uganda 🇺🇬"
-default_theme = "light"  # or "dark"
+default_theme = "dark"
 cot = "full"
 
 # Optional: Add your logo here if you have one!

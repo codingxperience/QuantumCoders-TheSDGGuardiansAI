@@ -2,10 +2,14 @@ import chainlit as cl
 import requests
 import json
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = os.environ.get("OPENROUTER_API_KEY")
+
+# debugger
+if not API_KEY:
+    raise EnvironmentError("❌ OPENROUTER_API_KEY environment variable not found.")
+
+# print("API KEY:", API_KEY)
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 SYSTEM_PROMPT = {
@@ -30,7 +34,7 @@ async def on_message(message: cl.Message):
     headers = {
         "Authorization": f"Bearer {API_KEY}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://climategpt.uganda",  # Optional
+        "Referer": "https://quantumcoders-thesdgguardiansai.onrender.com",  # Optional
         "X-Title": "Uganda ClimateGPT",  # Optional
     }
 
