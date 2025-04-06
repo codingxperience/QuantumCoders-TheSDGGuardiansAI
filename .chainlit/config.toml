@@ -1,4 +1,5 @@
 [project]
+dataPersistence = true
 enable_telemetry = true
 user_env = []
 session_timeout = 3600
@@ -12,6 +13,7 @@ latex = false
 user_message_autoscroll = true
 auto_tag_thread = true
 edit_message = true
+data_persistence = true
 
 [features.spontaneous_file_upload]
 enabled = true
@@ -34,6 +36,7 @@ name = "ClimateGPT Assistant"
 description = "Your friendly assistant for all things climate change in Uganda 🇺🇬"
 default_theme = "dark"
 cot = "full"
+default_sidebar_state = "open"  # Sidebar should be open by default
 
 # Optional: Add your logo here if you have one!
 # custom_meta_image_url = "https://yourdomain.com/logo.png"
