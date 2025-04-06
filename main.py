@@ -1,6 +1,7 @@
 import chainlit as cl
 import requests
 import json
+import logging 
 import os
 from dotenv import load_dotenv
 
