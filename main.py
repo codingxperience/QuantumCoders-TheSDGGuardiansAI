@@ -14,9 +14,12 @@ if not API_KEY:
 # --- Auth ---
 @cl.password_auth_callback
 def auth_callback(username: str, password: str):
-    if (username, password) == ("fred", "secret123"):
+    logging.info(f"Login attempt: username={username}")
+    
+    if username == "fred" and password == "secret123":
         return cl.User(identifier="fred", metadata={"role": "admin"})
-    return None
+
+    raise cl.AuthenticationError("Invalid username or password.")
 
 # --- Starter Prompts ---
 @cl.set_starters
