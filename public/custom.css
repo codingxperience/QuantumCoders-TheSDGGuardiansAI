@@ -1,0 +1,21 @@
+.watermark {
+  display: none !important;
+}
+
+.sidebar {
+  padding: 1rem;
+  background-color: #111827; /* dark shade */
+  color: #ffffff;
+}
+
+.sidebar .cl-button {
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar .cl-button:hover {
+  background-color: #2563eb;
+  color: white;
+}
+

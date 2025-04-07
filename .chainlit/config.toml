@@ -1,4 +1,5 @@
 [project]
+name = "Welcome to Uganda's ClimateGPT!"
 dataPersistence = true
 enable_telemetry = true
 user_env = []
@@ -33,6 +34,7 @@ allowed_executables = [ "npx", "uvx" ]
 
 [UI]
 name = "ClimateGPT Assistant"
+custom_css = "/public/custom.css"
 description = "Your friendly assistant for all things climate change in Uganda 🇺🇬"
 default_theme = "dark"
 cot = "full"
